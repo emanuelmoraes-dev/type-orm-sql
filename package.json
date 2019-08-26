@@ -1,0 +1,50 @@
+{
+  "name": "type-orm-sql",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "prod": "node dist/server.js",
+    "start": "tsc && node dist/server.js",
+    "win": "SET DEBUG=type-orm-sql:* & ts-node ./src/server.ts",
+    "sh": "DEBUG=type-orm-sql:* ts-node ./src/server.ts",
+    "test": "jest --no-catch"
+  },
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/debug": "^4.1.5",
+    "@types/express": "^4.17.1",
+    "@types/morgan": "^1.7.37",
+    "@types/supertest": "^2.0.8",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "pg": "^7.12.1",
+    "reflect-metadata": "^0.1.13",
+    "supertest": "^4.0.2",
+    "typeorm": "^0.2.18"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.2",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.test\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
